@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GADGET GALAXY — Discover Technology. Experience More. | Premium Electronics Store</title>
+  <meta name="description" content="Shop the latest smartphones, laptops, audio gear, smartwatches, gaming consoles, and smart home gadgets at Gadget Galaxy. Premium electronics with guaranteed warranty and fast delivery.">
+  <meta name="keywords" content="electronics, smartphones, laptops, gadgets, gaming, headphones, smartwatches, cameras, tech store">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232563EB'/><circle cx='50' cy='50' r='24' fill='%23FFFFFF'/><circle cx='50' cy='50' r='12' fill='%23111827'/></svg>">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Utility Strip -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container-xl">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <span class="top-badge">FREE DELIVERY</span>
+          <span>Complimentary express shipping on all orders over $100 &bull; Official 2-Year Tech Warranty</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="support-contact.html#delivery"><i class="bi bi-truck me-1"></i> Track Order</a>
+          <span class="opacity-25">|</span>
+          <a href="support-contact.html"><i class="bi bi-headset me-1"></i> Support 24/7</a>
+          <span class="opacity-25">|</span>
+          <a href="compare.html"><i class="bi bi-arrow-left-right me-1"></i> Compare (<span class="compare-count">0</span>)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navbar -->
+  <header class="site-navbar">
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg py-2">
+        <!-- Brand Logo -->
+        <a class="navbar-brand-logo me-lg-4" href="index.html">
+          <div class="brand-icon-box">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div>
+            <div class="brand-text">GADGET<span>GALAXY</span></div>
+            <span class="brand-tagline-sub">Discover Technology</span>
+          </div>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavDrawer" aria-controls="mobileNavDrawer" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-dark"></i>
+        </button>
+
+        <!-- Desktop Navigation Items -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <!-- Shop Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop.html"><i class="bi bi-grid-fill"></i> All Products</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=bestsellers"><i class="bi bi-fire"></i> Best Sellers</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=featured"><i class="bi bi-star-fill"></i> Featured Products</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=trending"><i class="bi bi-lightning-charge-fill"></i> Trending Gadgets</a></li>
+              </ul>
+            </li>
+
+            <!-- Categories Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop.html?category=smartphones"><i class="bi bi-phone"></i> Smartphones</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=laptops"><i class="bi bi-laptop"></i> Laptops</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=tablets"><i class="bi bi-tablet"></i> Tablets</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=audio"><i class="bi bi-headphones"></i> Audio & Headphones</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=smartwatches"><i class="bi bi-smartwatch"></i> Smartwatches</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=gaming"><i class="bi bi-controller"></i> Gaming</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=cameras"><i class="bi bi-camera"></i> Cameras</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=home"><i class="bi bi-house-gear"></i> Home Electronics</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=accessories"><i class="bi bi-plug"></i> Accessories</a></li>
+              </ul>
+            </li>
+
+            <!-- New Arrivals Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="shop.html?filter=new" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                New Arrivals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop.html?category=smartphones&filter=new"><i class="bi bi-phone"></i> Latest Smartphones</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=laptops&filter=new"><i class="bi bi-laptop"></i> Latest Laptops</a></li>
+                <li><a class="dropdown-item" href="shop.html?category=accessories&filter=new"><i class="bi bi-plug"></i> Latest Accessories</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="shop.html?filter=new"><i class="bi bi-clock-history"></i> Recently Added</a></li>
+              </ul>
+            </li>
+
+            <!-- Deals Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="shop.html?filter=deals" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Deals
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop.html?filter=deals"><i class="bi bi-tag-fill"></i> Today's Deals</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=deals"><i class="bi bi-percent"></i> Special Offers</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=deals"><i class="bi bi-box-seam"></i> Clearance Offers</a></li>
+                <li><a class="dropdown-item" href="shop.html?filter=deals"><i class="bi bi-collection-fill"></i> Bundle Deals</a></li>
+              </ul>
+            </li>
+
+            <!-- Compare -->
+            <li class="nav-item">
+              <a class="nav-link" href="compare.html">
+                Compare
+                <span class="badge bg-primary-subtle text-primary compare-count ms-1" style="display: none;">0</span>
+              </a>
+            </li>
+
+            <!-- Support Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="support-contact.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Support
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="support-contact.html#delivery"><i class="bi bi-truck"></i> Delivery Information</a></li>
+                <li><a class="dropdown-item" href="support-contact.html#returns"><i class="bi bi-arrow-return-left"></i> Returns & Refunds</a></li>
+                <li><a class="dropdown-item" href="support-contact.html#warranty"><i class="bi bi-shield-check"></i> Warranty Information</a></li>
+                <li><a class="dropdown-item" href="support-contact.html#contact"><i class="bi bi-chat-dots"></i> Contact Support</a></li>
+                <li><a class="dropdown-item" href="support-contact.html#faqs"><i class="bi bi-question-circle"></i> FAQs</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Right Action Bar: Search, Wishlist, Cart, Login/Signup & CTA -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- Global Search -->
+            <div class="nav-search-wrapper d-none d-xl-block">
+              <i class="bi bi-search nav-search-icon"></i>
+              <input type="text" class="nav-search-input" placeholder="Search gadgets, brands..." aria-label="Search gadgets">
+            </div>
+
+            <!-- Wishlist Button -->
+            <a href="shop.html?filter=wishlist" class="nav-action-btn" title="Saved Wishlist" id="wishlistNavBtn">
+              <i class="bi bi-heart fs-5"></i>
+              <span class="nav-badge-count badge-wishlist wishlist-count" style="display: none;">0</span>
+            </a>
+
+            <!-- Cart Button -->
+            <a href="cart.html" class="nav-action-btn" title="Shopping Cart" id="cartNavBtn">
+              <i class="bi bi-bag fs-5"></i>
+              <span class="nav-badge-count cart-count" style="display: none;">0</span>
+            </a>
+
+            <!-- Login / Signup Links -->
+            <div class="d-flex align-items-center gap-2 border-start ps-3 ms-1">
+              <a href="login.html" class="btn btn-sm btn-outline-galaxy py-1 px-3">Login</a>
+              <a href="signup.html" class="btn btn-sm btn-outline-galaxy py-1 px-3 d-none d-xxl-inline-block">Sign Up</a>
+            </div>
+
+            <!-- Mandatory Highlighted CTA -->
+            <a href="shop.html" class="btn-primary-galaxy ms-2">
+              <i class="bi bi-compass"></i> Explore Products
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Navigation Drawer -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNavDrawer" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header border-bottom">
+      <div class="d-flex align-items-center gap-2">
+        <div class="brand-icon-box" style="width: 32px; height: 32px; font-size: 1rem;">
+          <i class="bi bi-cpu"></i>
+        </div>
+        <div class="fw-bold font-heading fs-5">GADGET <span class="text-primary">GALAXY</span></div>
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- Mobile Search -->
+      <div class="nav-search-wrapper mb-4">
+        <i class="bi bi-search nav-search-icon"></i>
+        <input type="text" class="nav-search-input w-100" placeholder="Search gadgets, specs...">
+      </div>
+
+      <!-- Quick Action Badges -->
+      <div class="row g-2 mb-4 text-center">
+        <div class="col-4">
+          <a href="cart.html" class="p-2 border rounded-3 d-block text-dark text-decoration-none bg-light position-relative">
+            <i class="bi bi-bag fs-5 text-primary"></i>
+            <div class="small fw-semibold mt-1">Cart (<span class="cart-count">0</span>)</div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="shop.html?filter=wishlist" class="p-2 border rounded-3 d-block text-dark text-decoration-none bg-light position-relative">
+            <i class="bi bi-heart fs-5 text-danger"></i>
+            <div class="small fw-semibold mt-1">Wishlist (<span class="wishlist-count">0</span>)</div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="compare.html" class="p-2 border rounded-3 d-block text-dark text-decoration-none bg-light position-relative">
+            <i class="bi bi-arrow-left-right fs-5 text-success"></i>
+            <div class="small fw-semibold mt-1">Compare (<span class="compare-count">0</span>)</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Nav Links -->
+      <ul class="list-unstyled mb-4">
+        <li class="py-2 border-bottom"><a href="index.html" class="fw-bold text-dark d-block">Home</a></li>
+        <li class="py-2 border-bottom"><a href="shop.html" class="fw-semibold text-dark d-block">All Products</a></li>
+        <li class="py-2 border-bottom">
+          <div class="fw-semibold text-dark mb-2">Categories</div>
+          <div class="ps-3 d-flex flex-column gap-2 small">
+            <a href="shop.html?category=smartphones" class="text-secondary"><i class="bi bi-phone me-2 text-primary"></i>Smartphones</a>
+            <a href="shop.html?category=laptops" class="text-secondary"><i class="bi bi-laptop me-2 text-primary"></i>Laptops</a>
+            <a href="shop.html?category=tablets" class="text-secondary"><i class="bi bi-tablet me-2 text-primary"></i>Tablets</a>
+            <a href="shop.html?category=audio" class="text-secondary"><i class="bi bi-headphones me-2 text-primary"></i>Audio & Headphones</a>
+            <a href="shop.html?category=smartwatches" class="text-secondary"><i class="bi bi-smartwatch me-2 text-primary"></i>Smartwatches</a>
+            <a href="shop.html?category=gaming" class="text-secondary"><i class="bi bi-controller me-2 text-primary"></i>Gaming</a>
+            <a href="shop.html?category=cameras" class="text-secondary"><i class="bi bi-camera me-2 text-primary"></i>Cameras</a>
+            <a href="shop.html?category=home" class="text-secondary"><i class="bi bi-house-gear me-2 text-primary"></i>Home Electronics</a>
+            <a href="shop.html?category=accessories" class="text-secondary"><i class="bi bi-plug me-2 text-primary"></i>Accessories</a>
+          </div>
+        </li>
+        <li class="py-2 border-bottom"><a href="shop.html?filter=new" class="fw-semibold text-dark d-block">New Arrivals</a></li>
+        <li class="py-2 border-bottom"><a href="shop.html?filter=deals" class="fw-semibold text-danger d-block"><i class="bi bi-fire me-1"></i> Today's Deals</a></li>
+        <li class="py-2 border-bottom"><a href="compare.html" class="fw-semibold text-dark d-block">Compare Products</a></li>
+        <li class="py-2 border-bottom"><a href="support-contact.html" class="fw-semibold text-dark d-block">Customer Support & FAQs</a></li>
+      </ul>
+
+      <!-- Auth Buttons -->
+      <div class="d-grid gap-2">
+        <a href="shop.html" class="btn btn-primary-galaxy justify-content-center">Explore Products</a>
+        <div class="row g-2">
+          <div class="col-6"><a href="login.html" class="btn btn-outline-galaxy w-100 justify-content-center">Login</a></div>
+          <div class="col-6"><a href="signup.html" class="btn btn-outline-galaxy w-100 justify-content-center">Sign Up</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HERO SECTION -->
+  <section class="hero-section">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="bi bi-stars"></i> Next-Generation Tech Ecosystem
+          </div>
+          <h1 class="hero-title">
+            Upgrade Your World With <span class="gradient-text">Smarter Technology.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Explore premier smartphones, powerhouse laptops, spatial audio, and high-performance gaming gear from the world's most innovative tech creators.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="shop.html" class="btn-primary-galaxy py-3 px-4 fs-6">
+              Shop Now <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="shop.html?filter=new" class="btn-outline-galaxy py-3 px-4 fs-6 bg-white">
+              Explore New Arrivals
+            </a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div class="d-flex flex-wrap gap-4 pt-2 text-secondary small">
+            <div><i class="bi bi-check-circle-fill text-success me-2"></i>Official Brand Warranty</div>
+            <div><i class="bi bi-check-circle-fill text-success me-2"></i>Free 2-Day Delivery</div>
+            <div><i class="bi bi-check-circle-fill text-success me-2"></i>30-Day Easy Returns</div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Card -->
+        <div class="col-lg-6">
+          <div class="hero-image-wrap ps-lg-4">
+            <div class="hero-card-showcase">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-dark text-white px-3 py-2 rounded-pill">FLAGSHIP SPOTLIGHT</span>
+                <span class="text-primary fw-bold font-heading fs-5">$1,199</span>
+              </div>
+              
+              <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80" 
+                   alt="iPhone 16 Pro Max Flagship" class="hero-product-img">
+
+              <div class="mt-3 d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="fw-bold mb-0 text-midnight">iPhone 16 Pro Max</h4>
+                  <p class="text-muted small mb-0">Grade 5 Titanium &bull; A18 Pro &bull; 48MP Camera</p>
+                </div>
+                <a href="product-details.html?id=gg-phone-01" class="btn btn-sm btn-primary-galaxy">
+                  View Device
+                </a>
+              </div>
+
+              <!-- Floating Stat Card -->
+              <div class="hero-floating-stat d-none d-sm-flex">
+                <div class="stat-icon">
+                  <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <div>
+                  <div class="fw-bold text-dark small">Verified Authentic</div>
+                  <div class="text-muted" style="font-size: 0.72rem;">100% Genuine Tech Hardware</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST SIGNALS BAR -->
+  <section class="trust-bar">
+    <div class="container-xl">
+      <div class="row g-4 justify-content-between">
+        <div class="col-md-3 col-sm-6">
+          <div class="trust-item">
+            <div class="trust-icon-box"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <div class="trust-title">Secure Checkout</div>
+              <p class="trust-desc">256-bit encrypted transactions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="trust-item">
+            <div class="trust-icon-box"><i class="bi bi-truck"></i></div>
+            <div>
+              <div class="trust-title">Reliable Delivery</div>
+              <p class="trust-desc">Free shipping on orders over $100</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="trust-item">
+            <div class="trust-icon-box"><i class="bi bi-arrow-return-left"></i></div>
+            <div>
+              <div class="trust-title">Easy Returns</div>
+              <p class="trust-desc">30-day return policy guarantee</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="trust-item">
+            <div class="trust-icon-box"><i class="bi bi-award"></i></div>
+            <div>
+              <div class="trust-title">Warranty Support</div>
+              <p class="trust-desc">Full 2-year manufacturer coverage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATEGORIES SECTION -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap justify-content-between align-items-end section-header">
+        <div>
+          <span class="section-tag">BROWSE HARDWARE</span>
+          <h2 class="section-title">Explore Featured Categories</h2>
+          <p class="section-desc">From flagship mobile smartphones to audiophile acoustics, discover the gear tailored to elevate your setup.</p>
+        </div>
+        <a href="shop.html" class="btn-outline-galaxy mb-3">
+          All Categories <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-3 g-lg-4" id="homeCategoriesGrid">
+        <!-- Rendered dynamically from GadgetData.getCategories() -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS SECTION -->
+  <section class="py-5 bg-light border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap justify-content-between align-items-end section-header">
+        <div>
+          <span class="section-tag">HANDPICKED SELECTION</span>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-desc">Flagship electronics delivering pinnacle engineering, design, and performance.</p>
+        </div>
+        <a href="shop.html?filter=featured" class="btn-outline-galaxy mb-3 bg-white">
+          View All Featured <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4" id="homeFeaturedGrid">
+        <!-- Injected via JavaScript from products-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SOPHISTICATED PROMOTIONAL CAMPAIGN BANNER -->
+  <section class="py-5">
+    <div class="container-xl">
+      <div class="promo-banner-section">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="promo-badge"><i class="bi bi-lightning-charge me-1"></i> Special Promotion</span>
+            <h2 class="promo-title">Technology That Moves You Forward.</h2>
+            <p class="promo-desc">
+              Harness state-of-the-art silicon, OLED dynamic displays, and advanced spatial audio. Save up to $300 on selected flagship bundles this week with demo promo code <strong>GALAXY10</strong>.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="shop.html?filter=deals" class="btn btn-light text-midnight fw-bold px-4 py-3 rounded-3 shadow">
+                Discover More Deals <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              <a href="compare.html" class="btn btn-outline-light px-4 py-3 rounded-3">
+                Compare Flagships
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block text-end">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80" 
+                 alt="MacBook Pro Workstation" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" style="max-height: 280px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODAY'S DEALS & PROMOTIONS -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap justify-content-between align-items-end section-header">
+        <div>
+          <span class="section-tag text-danger"><i class="bi bi-fire me-1"></i> LIMITED TIME SAVINGS</span>
+          <h2 class="section-title">Today's Deals & Special Offers</h2>
+          <p class="section-desc">Exceptional discounts on genuine premium gadgets. Honest retail pricing with full manufacturer warranty.</p>
+        </div>
+        <a href="shop.html?filter=deals" class="btn-outline-galaxy mb-3">
+          Explore All Deals <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4" id="homeDealsGrid">
+        <!-- Injected via JavaScript from products-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="py-5 bg-light border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap justify-content-between align-items-end section-header">
+        <div>
+          <span class="section-tag">TOP RATED HARDWARE</span>
+          <h2 class="section-title">Best Sellers</h2>
+          <p class="section-desc">Consistently loved by creators, professionals, and tech enthusiasts worldwide.</p>
+        </div>
+        <a href="shop.html?filter=bestsellers" class="btn-outline-galaxy mb-3 bg-white">
+          See All Best Sellers <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4" id="homeBestSellersGrid">
+        <!-- Injected via JavaScript from products-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="py-5 bg-white border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap justify-content-between align-items-end section-header">
+        <div>
+          <span class="section-tag text-success"><i class="bi bi-sparkles me-1"></i> JUST LAUNCHED</span>
+          <h2 class="section-title">New Arrivals</h2>
+          <p class="section-desc">The freshest gadgets and accessories released in recent weeks.</p>
+        </div>
+        <a href="shop.html?filter=new" class="btn-outline-galaxy mb-3">
+          All New Arrivals <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="row g-4" id="homeNewArrivalsGrid">
+        <!-- Injected via JavaScript from products-data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SHOP WITH US SECTION -->
+  <section class="py-5 bg-light">
+    <div class="container-xl">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <span class="section-tag">THE GADGET GALAXY ADVANTAGE</span>
+        <h2 class="section-title">Why Shop With Us?</h2>
+        <p class="section-desc mx-auto">We redefine online technology procurement with transparent specifications, rapid dispatch, and dedicated after-sales care.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-shield-check fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">Authentic Hardware Guarantee</h4>
+            <p class="text-secondary small mb-0">Every gadget sold on Gadget Galaxy is factory sealed with genuine serial numbers and covered under direct manufacturer warranties.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-lightning-charge fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">Express Tracked Dispatch</h4>
+            <p class="text-secondary small mb-0">All orders placed before 3:00 PM are dispatched same-day with live tracking numbers from reputable couriers.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-arrow-repeat fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">30-Day Hassle-Free Returns</h4>
+            <p class="text-secondary small mb-0">Not completely satisfied with your new gadget? Return it in original packaging within 30 days for an effortless refund or swap.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-credit-card-2-front fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">Encrypted Flexible Payments</h4>
+            <p class="text-secondary small mb-0">Choose from credit cards, Apple Pay, Google Pay, UPI, net banking, or pay upon delivery with zero hidden transaction surcharges.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-headset fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">Tech Concierge 24/7</h4>
+            <p class="text-secondary small mb-0">Have technical spec questions before purchasing? Our hardware experts are on standby around the clock to guide your choices.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="p-4 bg-white rounded-4 border h-100 shadow-sm">
+            <div class="trust-icon-box mb-3 bg-primary-subtle text-primary">
+              <i class="bi bi-recycle fs-4"></i>
+            </div>
+            <h4 class="fw-bold fs-5 text-midnight">Sustainable Tech Trade-in</h4>
+            <p class="text-secondary small mb-0">Recycle your older electronic devices responsibly and receive instant store credit towards your next flagship purchase.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="py-5 bg-white border-top border-bottom">
+    <div class="container-xl">
+      <div class="newsletter-card">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase mb-2">STAY AHEAD</span>
+            <h3 class="fw-bold text-midnight mb-2 font-heading">Subscribe for VIP Tech Drops & Deals</h3>
+            <p class="text-secondary small mb-0">Join 120,000+ tech lovers. Receive early alerts on product launches, exclusive voucher codes, and hardware teardowns.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter-form">
+              <div class="newsletter-input-group">
+                <input type="email" class="newsletter-input" placeholder="Enter your work or personal email..." required>
+                <button type="submit" class="btn-primary-galaxy justify-content-center">
+                  Subscribe <i class="bi bi-send-fill ms-1"></i>
+                </button>
+              </div>
+              <div class="text-muted small mt-2" style="font-size: 0.75rem;">
+                <i class="bi bi-lock me-1"></i> We respect your privacy. Unsubscribe at any time with one click.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <a class="navbar-brand-logo mb-3" href="index.html">
+            <div class="brand-icon-box">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <div>
+              <div class="brand-text text-white">GADGET<span class="text-primary">GALAXY</span></div>
+              <span class="brand-tagline-sub text-secondary">Discover Technology</span>
+            </div>
+          </a>
+          <p class="small text-secondary mb-3 pe-lg-4">
+            GADGET GALAXY is your premier destination for flagship smartphones, ultrabooks, audiophile sound, next-gen gaming, and connected home innovations.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="nav-action-btn bg-dark text-white border-secondary" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="nav-action-btn bg-dark text-white border-secondary" title="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="nav-action-btn bg-dark text-white border-secondary" title="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="nav-action-btn bg-dark text-white border-secondary" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Popular Categories -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=smartphones">Smartphones</a></li>
+            <li><a href="shop.html?category=laptops">Laptops & MacBooks</a></li>
+            <li><a href="shop.html?category=tablets">Tablets & iPads</a></li>
+            <li><a href="shop.html?category=audio">Audio & Headphones</a></li>
+            <li><a href="shop.html?category=smartwatches">Smartwatches</a></li>
+            <li><a href="shop.html?category=gaming">Gaming Gear</a></li>
+            <li><a href="shop.html?category=cameras">Cameras & Drones</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Customer Care & Support -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="footer-heading">Support & Info</h5>
+          <ul class="footer-links">
+            <li><a href="support-contact.html#delivery">Delivery Information</a></li>
+            <li><a href="support-contact.html#returns">Returns & Refunds Policy</a></li>
+            <li><a href="support-contact.html#warranty">Warranty Coverage (2-Year)</a></li>
+            <li><a href="support-contact.html#faqs">Frequently Asked Questions</a></li>
+            <li><a href="support-contact.html#contact">Contact Support Team</a></li>
+            <li><a href="compare.html">Device Comparison Matrix</a></li>
+            <li><a href="coming-soon.html">Upcoming Launches</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Store Contact & Hours -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Customer Concierge</h5>
+          <div class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt-fill text-primary me-2"></i> 100 Technology Plaza, Silicon Way, CA 94025
+          </div>
+          <div class="small text-secondary mb-2">
+            <i class="bi bi-telephone-fill text-primary me-2"></i> +1 (800) 423-4384 (Toll-Free)
+          </div>
+          <div class="small text-secondary mb-3">
+            <i class="bi bi-envelope-fill text-primary me-2"></i> support@gadgetgalaxy.demo
+          </div>
+          <div class="p-3 rounded-3 bg-dark border border-secondary border-opacity-25 small text-secondary">
+            <strong class="text-white d-block mb-1">Store Hours:</strong>
+            Mon - Fri: 8:00 AM - 9:00 PM EST<br>
+            Sat - Sun: 9:00 AM - 6:00 PM EST
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Strip -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 GADGET GALAXY Inc. All rights reserved. &bull; 
+          <span class="text-warning">Demo E-Commerce Experience. No real payments processed.</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="payment-badge-pill"><i class="bi bi-credit-card"></i> Visa</span>
+          <span class="payment-badge-pill"><i class="bi bi-credit-card-2-front"></i> Mastercard</span>
+          <span class="payment-badge-pill"><i class="bi bi-apple"></i> Apple Pay</span>
+          <span class="payment-badge-pill"><i class="bi bi-google"></i> Google Pay</span>
+          <span class="payment-badge-pill"><i class="bi bi-shield-check"></i> 256-Bit SSL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Data & Master Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Page Specific Script: Render Home Grids -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Render Categories
+      const categoriesContainer = document.getElementById('homeCategoriesGrid');
+      if (categoriesContainer) {
+        const cats = GadgetData.getCategories();
+        categoriesContainer.innerHTML = cats.map(c => `
+          <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+            <a href="shop.html?category=${c.slug}" class="category-card">
+              <div class="category-img-wrap">
+                <img src="${c.image}" alt="${c.name}" loading="lazy">
+              </div>
+              <h4 class="category-name">${c.name}</h4>
+              <span class="category-count">${c.desc}</span>
+            </a>
+          </div>
+        `).join('');
+      }
+
+      // 2. Render Featured Products (first 4)
+      const featuredContainer = document.getElementById('homeFeaturedGrid');
+      if (featuredContainer) {
+        const featured = GadgetData.getFeatured().slice(0, 4);
+        featuredContainer.innerHTML = featured.map(p => GadgetGalaxy.renderProductCard(p)).join('');
+      }
+
+      // 3. Render Today's Deals (first 4)
+      const dealsContainer = document.getElementById('homeDealsGrid');
+      if (dealsContainer) {
+        const deals = GadgetData.getDeals().slice(0, 4);
+        dealsContainer.innerHTML = deals.map(p => GadgetGalaxy.renderProductCard(p)).join('');
+      }
+
+      // 4. Render Best Sellers (first 4)
+      const bestSellersContainer = document.getElementById('homeBestSellersGrid');
+      if (bestSellersContainer) {
+        const bestSellers = GadgetData.getBestSellers().slice(0, 4);
+        bestSellersContainer.innerHTML = bestSellers.map(p => GadgetGalaxy.renderProductCard(p)).join('');
+      }
+
+      // 5. Render New Arrivals (first 4)
+      const newArrivalsContainer = document.getElementById('homeNewArrivalsGrid');
+      if (newArrivalsContainer) {
+        const newArrivals = GadgetData.getNewArrivals().slice(0, 4);
+        newArrivalsContainer.innerHTML = newArrivals.map(p => GadgetGalaxy.renderProductCard(p)).join('');
+      }
+
+      // Re-sync wishlist & compare buttons
+      GadgetGalaxy.syncWishlistButtons();
+      GadgetGalaxy.syncCompareButtons();
+    });
+  </script>
+</body>
+</html>

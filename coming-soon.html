@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon — Next-Gen Hardware Launch | GADGET GALAXY</title>
+  <meta name="description" content="Be the first to experience our next-generation quantum silicon and neural tech portfolio. Sign up for early VIP launch invitations.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%232563EB'/><circle cx='50' cy='50' r='24' fill='%23FFFFFF'/><circle cx='50' cy='50' r='12' fill='%23111827'/></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .countdown-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 18px 24px;
+      min-width: 100px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .countdown-num {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-electric-blue);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .countdown-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container-xl">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <span class="top-badge">EXCLUSIVE PREMIERE</span>
+          <span>Register for VIP Priority Invitations & Private Early Unboxing</span>
+        </div>
+        <div>
+          <a href="shop.html"><i class="bi bi-grid me-1"></i> Browse Current Hardware</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Primary Header & Navbar -->
+  <header class="site-navbar">
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg py-2">
+        <a class="navbar-brand-logo me-lg-4" href="index.html">
+          <div class="brand-icon-box"><i class="bi bi-cpu"></i></div>
+          <div>
+            <div class="brand-text">GADGET<span>GALAXY</span></div>
+            <span class="brand-tagline-sub">Discover Technology</span>
+          </div>
+        </a>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html?category=smartphones">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+            <li class="nav-item"><a class="nav-link" href="support-contact.html">Support</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="cart.html" class="nav-action-btn" title="Shopping Cart">
+              <i class="bi bi-bag fs-5"></i>
+              <span class="nav-badge-count cart-count" style="display: none;">0</span>
+            </a>
+            <a href="shop.html" class="btn-primary-galaxy ms-2">
+              <i class="bi bi-compass"></i> Explore Products
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- COMING SOON HERO -->
+  <section class="py-5 bg-light border-bottom text-center">
+    <div class="container-xl py-4">
+      <div class="max-w-700 mx-auto">
+        <span class="hero-badge"><i class="bi bi-stars"></i> NEXT-GEN ELECTRONICS DEBUT</span>
+        <h1 class="display-5 fw-bold text-midnight font-heading mb-3">
+          Quantum Neural Ecosystems Are Coming.
+        </h1>
+        <p class="text-secondary fs-6 mb-4">
+          Prepare for the grand global unveiling of our 2027 flagship electronics showcase. Featuring breakthroughs in on-device quantum neural accelerators, solid-state batteries, and micro-OLED spatial optics.
+        </p>
+
+        <!-- Live Dynamic Countdown -->
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-5" id="launchCountdown">
+          <div class="countdown-card">
+            <div class="countdown-num" id="cdDays">18</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-num" id="cdHours">07</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-num" id="cdMins">42</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-card">
+            <div class="countdown-num" id="cdSecs">59</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <!-- Notification VIP Form -->
+        <div class="p-4 bg-white rounded-4 border shadow-sm max-w-600 mx-auto mb-4 text-start">
+          <h5 class="fw-bold text-midnight font-heading mb-2">Get Early Keynote Access & Allocation Priority</h5>
+          <p class="text-secondary small mb-3">Leave your email to receive private registration credentials 24 hours before the public live stream.</p>
+          
+          <form id="comingSoonNotifyForm">
+            <div class="input-group">
+              <input type="email" class="form-control" id="notifyEmailInput" placeholder="Enter your email for private alert..." required>
+              <button class="btn btn-primary-galaxy" type="submit">
+                Notify Me <i class="bi bi-bell-fill ms-1"></i>
+              </button>
+            </div>
+            <div class="text-muted small mt-2" style="font-size: 0.72rem;">
+              <i class="bi bi-shield-check text-success me-1"></i> Zero spam. Strictly launch date invitations and allocation reservations.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEASER PRODUCT CARDS -->
+  <section class="py-5 bg-white">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <span class="section-tag">SNEAK PREVIEW</span>
+        <h2 class="section-title">Hardware in the Pipeline</h2>
+        <p class="section-desc mx-auto">Explore preview specifications for our upcoming product launches.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 bg-light rounded-4 border h-100">
+            <div class="badge bg-primary text-white fw-bold mb-3">Q1 PREMIERE</div>
+            <h5 class="fw-bold text-midnight font-heading mb-2">Quantum Neo AR Glasses</h5>
+            <p class="text-secondary small mb-3">Ultra-light 48g titanium frames with dual 4K micro-OLED transparent waveguide optics and gesture control.</p>
+            <span class="small text-muted fw-semibold">&bull; Spatial Tracking &bull; 18h Battery</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 bg-light rounded-4 border h-100">
+            <div class="badge bg-primary text-white fw-bold mb-3">Q1 PREMIERE</div>
+            <h5 class="fw-bold text-midnight font-heading mb-2">Fold Trio Pro 10.2"</h5>
+            <p class="text-secondary small mb-3">Tri-fold flexible OLED panel expanding from a 6.4" one-hand phone into a 10.2" creative tablet with zero crease.</p>
+            <span class="small text-muted fw-semibold">&bull; Snapdragon 8 Gen 4 &bull; 16GB RAM</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 bg-light rounded-4 border h-100">
+            <div class="badge bg-primary text-white fw-bold mb-3">Q2 PREMIERE</div>
+            <h5 class="fw-bold text-midnight font-heading mb-2">AeroBook SolidState 14</h5>
+            <p class="text-secondary small mb-3">First commercial laptop equipped with solid-state chemistry battery delivering 32 hours continuous video playback.</p>
+            <span class="small text-muted fw-semibold">&bull; 0.99 kg Weight &bull; 3nm Node</span>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="p-4 bg-light rounded-4 border h-100">
+            <div class="badge bg-primary text-white fw-bold mb-3">Q2 PREMIERE</div>
+            <h5 class="fw-bold text-midnight font-heading mb-2">Spatial Horizon Studio</h5>
+            <p class="text-secondary small mb-3">12-driver planar magnetic reference studio headphones with personalized ear-canal HRTF calibration.</p>
+            <span class="small text-muted fw-semibold">&bull; Lossless Wireless &bull; Custom DSP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center pt-5">
+        <a href="shop.html" class="btn btn-outline-galaxy px-4 py-3">
+          Explore Currently Available Flagship Electronics <i class="bi bi-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container-xl text-center small text-secondary">
+      <div>&copy; 2026 GADGET GALAXY Inc. All rights reserved. &bull; Future Launch Showcase</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Simple dynamic countdown timer simulation
+    let seconds = 59;
+    let minutes = 42;
+    let hours = 7;
+    let days = 18;
+
+    setInterval(() => {
+      seconds--;
+      if (seconds < 0) {
+        seconds = 59;
+        minutes--;
+        if (minutes < 0) {
+          minutes = 59;
+          hours--;
+          if (hours < 0) {
+            hours = 23;
+            days--;
+          }
+        }
+      }
+      document.getElementById('cdSecs').textContent = seconds < 10 ? '0' + seconds : seconds;
+      document.getElementById('cdMins').textContent = minutes < 10 ? '0' + minutes : minutes;
+      document.getElementById('cdHours').textContent = hours < 10 ? '0' + hours : hours;
+      document.getElementById('cdDays').textContent = days;
+    }, 1000);
+
+    // Form submit listener
+    document.getElementById('comingSoonNotifyForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = document.getElementById('notifyEmailInput').value;
+      GadgetGalaxy.showToast(`Thank you! <strong>${email}</strong> is registered for private keynote access.`, 'success', 'bi-check-circle-fill');
+      document.getElementById('notifyEmailInput').value = '';
+    });
+  </script>
+</body>
+</html>
