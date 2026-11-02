@@ -768,9 +768,9 @@ const GADGET_PRODUCTS = [
     isBestSeller: true,
     stockStatus: "In Stock (Demo: 15 units)",
     stockCount: 15,
-    image: "https://images.unsplash.com/photo-1612287232204-749e75525042?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1612287232204-749e75525042?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
     ],
     colors: [
@@ -1078,10 +1078,10 @@ const GADGET_PRODUCTS = [
     isBestSeller: true,
     stockStatus: "In Stock (Demo: 42 units)",
     stockCount: 42,
-    image: "https://images.unsplash.com/photo-1609592807963-42e7efb0b970?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1609592807963-42e7efb0b970?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?auto=format&fit=crop&w=800&q=80"
     ],
     colors: [
       { name: "Gunmetal Gray", hex: "#3A3D42" }

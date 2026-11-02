@@ -11,139 +11,113 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="bg-light">
 
-  <!-- Top Bar -->
-  <div class="top-bar d-none d-md-block">
-    <div class="container-xl">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <span class="top-badge">AUTHENTICATION PORTAL</span>
-          <span>Access Your Saved Tech Hardware Wishlist & Live Tracking</span>
-        </div>
-        <div>
-          <a href="support-contact.html"><i class="bi bi-question-circle me-1"></i> Need Help?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Primary Header & Navbar -->
-  <header class="site-navbar">
-    <div class="container-xl">
-      <nav class="navbar navbar-expand-lg py-2">
-        <a class="navbar-brand-logo me-lg-4" href="index.html">
-          <div class="brand-icon-box"><i class="bi bi-cpu"></i></div>
-          <div>
+  <!-- MAIN LOGIN AUTH SECTION (Centered box, Navbar & Footer removed) -->
+  <main class="auth-wrapper">
+    <div class="auth-box-card">
+      
+      <!-- Brand Name Inside Box in Top Center -->
+      <div class="text-center mb-4">
+        <a class="navbar-brand-logo d-inline-flex align-items-center justify-content-center mb-3" href="index.html">
+          <div class="brand-icon-box">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div class="text-start">
             <div class="brand-text">GADGET<span>GALAXY</span></div>
             <span class="brand-tagline-sub">Discover Technology</span>
           </div>
         </a>
+        <h1 class="h4 fw-bold font-heading text-midnight mb-1">Welcome Back</h1>
+        <p class="text-secondary small mb-0">Sign in to manage your hardware and orders</p>
+      </div>
 
-        <div class="ms-auto d-flex align-items-center gap-3">
-          <span class="small text-muted d-none d-sm-inline">New to Gadget Galaxy?</span>
-          <a href="signup.html" class="btn btn-sm btn-primary-galaxy">
-            Create Account
+      <!-- Quick Fill Demo Button -->
+      <div class="d-flex justify-content-end mb-3">
+        <button type="button" class="btn btn-sm btn-outline-primary" id="demoQuickFillBtn" title="Auto-fill demo test credentials">
+          <i class="bi bi-lightning-charge-fill me-1"></i> Quick Fill Demo
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="galaxyLoginForm" novalidate>
+        <!-- Email Input -->
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Email Address *</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+            <input type="email" class="form-control border-start-0" id="loginEmail" placeholder="e.g. alexander.wright@techdemo.com" required>
+            <div class="invalid-feedback small">Please provide a valid email.</div>
+          </div>
+        </div>
+
+        <!-- Password Input -->
+        <div class="mb-3">
+          <label class="form-label small fw-semibold">Password *</label>
+          <div class="input-group">
+            <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock text-muted"></i></span>
+            <input type="password" class="form-control border-start-0 border-end-0" id="loginPassword" placeholder="••••••••" required>
+            <button type="button" class="btn btn-outline-secondary btn-toggle-password bg-light" data-target-input="loginPassword" aria-label="Toggle password visibility">
+              <i class="bi bi-eye"></i>
+            </button>
+            <div class="invalid-feedback small">Password is required.</div>
+          </div>
+        </div>
+
+        <!-- Remember Me and Forgot Password in Same Line -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="form-check mb-0">
+            <input class="form-check-input" type="checkbox" id="rememberMeCb" checked>
+            <label class="form-check-label small text-secondary" for="rememberMeCb">
+              Remember me
+            </label>
+          </div>
+          <a href="#" class="small text-primary text-decoration-none fw-medium" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+            Forgot password?
           </a>
         </div>
-      </nav>
-    </div>
-  </header>
 
-  <!-- MAIN LOGIN AUTH SECTION -->
-  <div class="auth-wrapper">
-    <div class="auth-card">
-      <div class="row g-0">
-        
-        <!-- LEFT: VISUAL PANE (Column: 5) -->
-        <div class="col-lg-5 auth-hero-pane">
-          <div>
-            <span class="badge bg-white text-midnight fw-bold text-uppercase px-3 py-2 rounded-pill mb-4">
-              <i class="bi bi-shield-check text-primary me-1"></i> Tech Portal
-            </span>
-            <h2 class="display-6 fw-bold text-white font-heading mb-3">Pinnacle Technology at Your Fingertips.</h2>
-            <p class="text-light small mb-0">
-              Sign in to manage your hardware orders, view official 2-year warranty registrations, and access exclusive member deals.
-            </p>
-          </div>
+        <!-- Sign In Button -->
+        <button type="submit" class="btn btn-primary-galaxy w-100 justify-content-center py-2 fs-6 mb-3">
+          Sign In <i class="bi bi-arrow-right ms-2"></i>
+        </button>
+      </form>
 
-          <div class="my-4 text-center">
-            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=500&q=80" 
-                 alt="Flagship Phone" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25" style="max-height: 220px; object-fit: cover;">
-          </div>
-
-          <div class="border-top border-secondary border-opacity-50 pt-3 small text-light">
-            <i class="bi bi-quote fs-4 text-primary d-block mb-1"></i>
-            <em>"The smoothest electronics buying journey I have experienced online."</em>
-            <div class="mt-2 text-white fw-bold">— Marcus Vance, Verified Owner</div>
-          </div>
-        </div>
-
-        <!-- RIGHT: LOGIN FORM PANE (Column: 7) -->
-        <div class="col-lg-7 auth-form-pane">
-          <div class="d-flex justify-content-between align-items-start mb-4">
-            <div>
-              <h2 class="h3 fw-bold font-heading text-midnight mb-1">Welcome Back</h2>
-              <p class="text-secondary small mb-0">Enter your credentials to access your demonstration account.</p>
-            </div>
-            <!-- Quick Fill Demo Button -->
-            <button type="button" class="btn btn-sm btn-outline-primary" id="demoQuickFillBtn" title="Auto-fill demo test credentials">
-              <i class="bi bi-lightning-charge-fill me-1"></i> Quick Fill Demo
-            </button>
-          </div>
-
-          <form id="galaxyLoginForm" novalidate>
-            <div class="mb-3">
-              <label class="form-label small fw-semibold">Email Address *</label>
-              <div class="input-group">
-                <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-muted"></i></span>
-                <input type="email" class="form-control border-start-0" id="loginEmail" placeholder="e.g. alexander.wright@techdemo.com" required>
-                <div class="invalid-feedback small">Please provide a valid email.</div>
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <div class="d-flex justify-content-between align-items-center mb-1">
-                <label class="form-label small fw-semibold mb-0">Password *</label>
-                <a href="#" class="small text-primary text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot Password?</a>
-              </div>
-              <div class="input-group">
-                <span class="input-group-text bg-light border-end-0"><i class="bi bi-lock text-muted"></i></span>
-                <input type="password" class="form-control border-start-0 border-end-0" id="loginPassword" placeholder="••••••••" required>
-                <button type="button" class="btn btn-outline-secondary btn-toggle-password bg-light" data-target-input="loginPassword">
-                  <i class="bi bi-eye"></i>
-                </button>
-                <div class="invalid-feedback small">Password is required.</div>
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="rememberMeCb" checked>
-                <label class="form-check-label small text-secondary" for="rememberMeCb">
-                  Remember this device for 30 days
-                </label>
-              </div>
-            </div>
-
-            <button type="submit" class="btn btn-primary-galaxy w-100 justify-content-center py-3 fs-6 mb-3">
-              Sign In to Account <i class="bi bi-arrow-right ms-2"></i>
-            </button>
-          </form>
-
-          <div class="text-center pt-3 border-top">
-            <span class="text-secondary small">Don't have an account yet?</span>
-            <a href="signup.html" class="fw-bold text-primary small text-decoration-none ms-1">Create Account Here</a>
-          </div>
-
-          <div class="alert alert-light border small text-muted mt-4 mb-0 text-center" style="font-size: 0.75rem;">
-            <i class="bi bi-info-circle me-1 text-primary"></i> <strong>Demonstration Notice:</strong> Client-side authentication simulation. No actual user session server is contacted.
-          </div>
-        </div>
-
+      <!-- Social Login Buttons (Google & Apple) -->
+      <div class="position-relative my-4 text-center">
+        <hr class="opacity-25 my-0">
+        <span class="position-absolute top-50 start-50 translate-middle bg-white px-3 small text-muted" style="font-size: 0.78rem;">Or continue with</span>
       </div>
+
+      <div class="row g-2 mb-4">
+        <div class="col-6">
+          <button type="button" class="auth-social-btn" onclick="GadgetGalaxy.showToast('Google authentication demo connected!', 'info', 'bi-google')">
+            <i class="bi bi-google text-danger fs-5"></i>
+            <span>Google</span>
+          </button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="auth-social-btn" onclick="GadgetGalaxy.showToast('Apple ID authentication demo connected!', 'info', 'bi-apple')">
+            <i class="bi bi-apple text-dark fs-5"></i>
+            <span>Apple</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sign Up Link -->
+      <div class="text-center pt-2 border-top">
+        <span class="text-secondary small">Don't have an account yet?</span>
+        <a href="signup.html" class="fw-bold text-primary small text-decoration-none ms-1">Create Account Here</a>
+      </div>
+
+      <div class="text-center mt-3">
+        <a href="index.html" class="small text-muted text-decoration-none">
+          <i class="bi bi-arrow-left me-1"></i> Return to Homepage
+        </a>
+      </div>
+
     </div>
-  </div>
+  </main>
 
   <!-- FORGOT PASSWORD MODAL -->
   <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
@@ -171,13 +145,6 @@
       </div>
     </div>
   </div>
-
-  <!-- SITE FOOTER -->
-  <footer class="site-footer">
-    <div class="container-xl text-center small text-secondary">
-      <div>&copy; 2026 GADGET GALAXY Inc. All rights reserved. &bull; Customer Authentication Portal</div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

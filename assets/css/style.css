@@ -1323,51 +1323,70 @@ img {
    AUTH PAGES (LOGIN & SIGN UP)
    ========================================================================== */
 .auth-wrapper {
-  min-height: calc(100vh - 160px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px 16px;
+  background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.08) 0%, #F8FAFC 70%);
 }
 
-.auth-card {
+.auth-box-card {
   background: #FFFFFF;
   border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  max-width: 960px;
+  padding: 44px 36px;
+  box-shadow: 0 16px 36px -8px rgba(15, 23, 42, 0.1), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  max-width: 500px;
   width: 100%;
-}
-
-.auth-hero-pane {
-  background: linear-gradient(135deg, var(--color-midnight), var(--color-deep-navy));
-  color: #FFFFFF;
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 
-.auth-form-pane {
-  padding: 48px;
+@media (max-width: 575.98px) {
+  .auth-box-card {
+    padding: 30px 20px;
+  }
+}
+
+.auth-social-btn {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-midnight);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-decoration: none;
+}
+
+.auth-social-btn:hover {
+  background: var(--color-light-grey);
+  border-color: var(--color-cool-silver);
+  color: var(--color-midnight);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
 }
 
 /* ==========================================================================
-   FOOTER
+   FOOTER (White Background, Consistent & Refined)
    ========================================================================== */
 .site-footer {
-  background: var(--color-midnight);
-  color: var(--color-cool-silver);
+  background: #FFFFFF;
+  color: var(--text-secondary);
   padding: 60px 0 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border-light);
   font-size: 0.9rem;
 }
 
 .footer-heading {
-  color: #FFFFFF;
+  color: var(--color-midnight);
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
@@ -1386,27 +1405,50 @@ img {
 }
 
 .footer-links a {
-  color: var(--color-cool-silver);
+  color: var(--text-secondary);
   transition: var(--transition-fast);
 }
 
 .footer-links a:hover {
-  color: #FFFFFF;
+  color: var(--color-electric-blue);
   padding-left: 4px;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border-light);
   margin-top: 40px;
   padding-top: 24px;
   font-size: 0.8125rem;
-  color: var(--text-light);
+  color: var(--text-muted);
+}
+
+.footer-social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-grey);
+  color: var(--color-midnight);
+  border: 1px solid var(--border-light);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.footer-social-btn:hover {
+  background-color: var(--color-electric-blue);
+  color: #FFFFFF !important;
+  border-color: var(--color-electric-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
 }
 
 .payment-badge-pill {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
+  background: var(--color-light-grey);
+  border: 1px solid var(--border-light);
+  color: var(--color-midnight);
   font-size: 0.72rem;
   font-weight: 600;
   padding: 4px 10px;
@@ -1414,6 +1456,22 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+}
+
+/* Contact page interactive map frame */
+.contact-map-frame {
+  width: 100%;
+  height: 380px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* ==========================================================================
@@ -1503,3 +1561,291 @@ img {
     flex-direction: column;
   }
 }
+
+/* ==========================================================================
+   AUTHENTICATION PAGES (CENTERED BOX CARDS)
+   ========================================================================== */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+  background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+}
+
+.auth-box-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  max-width: 490px;
+  padding: 38px 34px;
+  margin: auto;
+}
+
+.auth-social-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  background: #ffffff;
+  color: var(--color-midnight);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.auth-social-btn:hover {
+  background: #f8fafc;
+  border-color: var(--color-electric-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   WHITE SITE FOOTER & SOCIAL ICONS HOVER
+   ========================================================================== */
+.site-footer {
+  background-color: #ffffff !important;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-light);
+  padding: 60px 0 30px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.site-footer .brand-text {
+  color: var(--color-midnight) !important;
+}
+
+.site-footer .footer-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-midnight);
+  margin-bottom: 18px;
+  font-family: var(--font-heading);
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 10px;
+}
+
+.site-footer .footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: all var(--transition-fast);
+}
+
+.site-footer .footer-links a:hover {
+  color: var(--color-electric-blue);
+  padding-left: 4px;
+}
+
+.site-footer .footer-bottom {
+  border-top: 1px solid var(--border-light);
+  padding-top: 24px;
+  margin-top: 40px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+/* Footer Social Icons with Interactive Hover */
+.footer-social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: var(--color-midnight);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--border-light);
+}
+
+.footer-social-btn:hover {
+  background: var(--color-electric-blue);
+  color: #ffffff !important;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.35);
+  border-color: var(--color-electric-blue);
+}
+
+/* Payment Badge Pills */
+.payment-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+/* Contact Page Interactive Map Frame */
+.contact-map-frame {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   HAMBURGER MENU & RESPONSIVE LAYOUT AT 1024PX AND BELOW
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .site-navbar .navbar {
+    flex-wrap: wrap !important;
+  }
+  .site-navbar .navbar-toggler {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-navbar #desktopNav,
+  .site-navbar .navbar-collapse {
+    display: none !important;
+  }
+
+  /* Expand main catalog area to 100% full width and hide desktop sidebar */
+  aside.col-lg-3,
+  aside.col-xl-3,
+  .shop-sidebar {
+    display: none !important;
+  }
+  main.col-lg-9,
+  main.col-xl-9,
+  main.col-12 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE & TABLET DRAWER ACCORDION MENUS
+   ========================================================================== */
+.mobile-nav-accordion .accordion-button {
+  font-size: 0.95rem;
+  box-shadow: none !important;
+}
+.mobile-nav-accordion .accordion-button:not(.collapsed) {
+  color: var(--color-electric-blue) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.mobile-nav-accordion .accordion-button:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+.mobile-nav-accordion .accordion-button::after {
+  background-size: 0.85rem;
+}
+
+/* ==========================================================================
+   TABLET & 1024PX VIEW: FULL WIDTH CARD ALIGNMENT (2 PER ROW, ODD CENTERED)
+   ========================================================================== */
+@media (min-width: 576px) and (max-width: 1024px) {
+  /* Allow containers to use full available screen width with clean padding */
+  .container,
+  .container-xl,
+  .container-lg,
+  .container-md {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Card grid rows take full width and wrap properly */
+  #shopProductsGrid,
+  #homeFeaturedGrid,
+  #homeDealsGrid,
+  #homeBestSellersGrid,
+  #homeNewArrivalsGrid,
+  #relatedProductsGrid,
+  #homeCategoriesGrid,
+  .trust-bar .row,
+  .row:has(> [class*="col-"] > .product-card),
+  .row:has(> [class*="col-"] > .category-card),
+  .row:has(> [class*="col-"] > .trust-item),
+  .row:has(> [class*="col-"] > .card) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Direct card columns: 2 cards per row taking 50% width each (full width across the container) */
+  #shopProductsGrid > [class*="col-"],
+  #homeFeaturedGrid > [class*="col-"],
+  #homeDealsGrid > [class*="col-"],
+  #homeBestSellersGrid > [class*="col-"],
+  #homeNewArrivalsGrid > [class*="col-"],
+  #relatedProductsGrid > [class*="col-"],
+  #homeCategoriesGrid > [class*="col-"],
+  .trust-bar .row > [class*="col-"],
+  .row:has(> [class*="col-"] > .product-card) > [class*="col-"]:has(> .product-card),
+  .row:has(> [class*="col-"] > .category-card) > [class*="col-"]:has(> .category-card),
+  .row:has(> [class*="col-"] > .trust-item) > [class*="col-"]:has(> .trust-item),
+  .row:has(> [class*="col-"] > .card) > [class*="col-"]:has(> .card) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  /* Ensure card itself expands to 100% full width of its column */
+  .product-card,
+  .category-card,
+  .trust-item,
+  .card {
+    width: 100% !important;
+  }
+
+  /* Align last odd card in center */
+  #shopProductsGrid > [class*="col-"]:last-child:nth-child(odd),
+  #homeFeaturedGrid > [class*="col-"]:last-child:nth-child(odd),
+  #homeDealsGrid > [class*="col-"]:last-child:nth-child(odd),
+  #homeBestSellersGrid > [class*="col-"]:last-child:nth-child(odd),
+  #homeNewArrivalsGrid > [class*="col-"]:last-child:nth-child(odd),
+  #relatedProductsGrid > [class*="col-"]:last-child:nth-child(odd),
+  #homeCategoriesGrid > [class*="col-"]:last-child:nth-child(odd),
+  .trust-bar .row > [class*="col-"]:last-child:nth-child(odd),
+  .row:has(> [class*="col-"] > .product-card) > [class*="col-"]:has(> .product-card):last-child:nth-child(odd),
+  .row:has(> [class*="col-"] > .category-card) > [class*="col-"]:has(> .category-card):last-child:nth-child(odd),
+  .row:has(> [class*="col-"] > .trust-item) > [class*="col-"]:has(> .trust-item):last-child:nth-child(odd),
+  .row:has(> [class*="col-"] > .card) > [class*="col-"]:has(> .card):last-child:nth-child(odd) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+
+
+
